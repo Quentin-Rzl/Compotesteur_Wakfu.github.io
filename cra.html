@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cra — Compotesteur Wakfu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="navbar-logo-link">
+    <img src="https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/Accueil/logo%20site.png?raw=true" alt="Logo Compotesteur - retour à l'accueil" class="navbar-logo">
+  </a>
+  <nav class="navbar-links">
+    <a href="classes.html">CLASSES</a>
+    <a href="synergie.html">SYNERGIE</a>
+  </nav>
+</header>
+
+<main class="personnage-bg-page">
+  <div class="perso-bg-tint" style="background-color: #84a500;"></div>
+  <div class="perso-bg-sharp" style="background-image: url('https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/Classes/Cra/cra%20theme.png?raw=true');"></div>
+
+  <div class="personnage-layout">
+    <div class="personnage-resume-wrap">
+      <div class="personnage-resume">
+        <h1 id="perso-nom"></h1>
+        <p id="perso-resume"></p>
+      </div>
+    </div>
+
+    <div class="personnage-media">
+      <video id="perso-video" autoplay loop muted playsinline>
+        <source src="" type="video/mp4">
+      </video>
+      <div class="personnage-roles" id="perso-roles"></div>
+      <div class="personnage-gameplay-info" id="perso-gameplay-info">
+        <!-- Informations de gameplay à venir -->
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="donnees-personnages.js"></script>
+<script src="personnage-page.js"></script>
+<script>
+  initPersonnagePage({
+    baseId: "Cra",
+    resume: "Archer à la précision inégalée, le Cra trouve toujours un moyen d'atteindre sa cible sur une très longue distance. En plus de ses diverses flèches, il pose des balises qui répliquent ses attaques en zone pour toujours plus de dégâts !",
+    videoUrl: "https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/4e99ab66ee635c28bfb98a2b7676fa7468136bcf/vid%C3%A9os/gameplay/extrait%20cra.mp4?raw=true",
+    rolesGameplay: [
+      { icon: "https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/synergies/dps.png?raw=true", label: "Dégâts" },
+      { icon: "https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/synergies/mobilit%C3%A9.png?raw=true", label: "Mobilité" }
+    ],
+    difficulte: 1
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synergie — Équipe de 3 — Compotesteur Wakfu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="navbar-logo-link">
+    <img src="https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/Accueil/logo%20site.png?raw=true" alt="Logo Compotesteur - retour à l'accueil" class="navbar-logo">
+  </a>
+  <nav class="navbar-links">
+    <a href="classes.html">CLASSES</a>
+    <a href="synergie.html">SYNERGIE</a>
+  </nav>
+</header>
+
+<main class="classes-page synergie-page" style="background-image: url('https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/Classes/fond%20classes.png?raw=true');">
+
+  <div class="synergie-layout">
+
+    <!-- ===================== COLONNE GAUCHE : SELECTION ===================== -->
+    <section class="synergie-col synergie-col-select">
+      <div class="synergie-header">
+        <h1>Équipe de 3</h1>
+        <p>Sélectionne 3 personnages (les doublons sont autorisés), puis valide pour voir le bilan à droite.</p>
+      </div>
+
+      <div class="selection-bar">
+        <div class="selection-slots" id="selection-slots">
+          <div class="selection-slot" data-slot="0"></div>
+          <div class="selection-slot" data-slot="1"></div>
+          <div class="selection-slot" data-slot="2"></div>
+        </div>
+        <div class="selection-actions">
+          <span class="selection-count" id="selection-count">0 / 3 sélectionné(s)</span>
+          <button id="reset-btn" class="btn-secondary">Réinitialiser</button>
+          <button id="valider-btn" class="btn-primary" disabled>Valider l'équipe</button>
+        </div>
+      </div>
+
+      <div class="classes-grid synergie-grid" id="character-grid"></div>
+    </section>
+
+    <!-- ===================== COLONNE DROITE : RESULTAT ===================== -->
+    <section class="synergie-col synergie-col-result">
+      <div id="resultat-contenu">
+        <div class="resultat-placeholder">
+          <p>Le bilan de ton équipe s'affichera ici une fois la sélection validée.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</main>
+
+<script src="donnees-personnages.js"></script>
+<script src="compotesteur.js"></script>
+<script src="synergie.js"></script>
+</body>
+</html>

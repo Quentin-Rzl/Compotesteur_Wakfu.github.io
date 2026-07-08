@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xélor — Compotesteur Wakfu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="navbar-logo-link">
+    <img src="https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/Accueil/logo%20site.png?raw=true" alt="Logo Compotesteur - retour à l'accueil" class="navbar-logo">
+  </a>
+  <nav class="navbar-links">
+    <a href="classes.html">CLASSES</a>
+    <a href="synergie.html">SYNERGIE</a>
+  </nav>
+</header>
+
+<main class="personnage-bg-page">
+  <div class="perso-bg-tint" style="background-color: #1f3155;"></div>
+  <div class="perso-bg-sharp" style="background-image: url('https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/Classes/Xelor/xelor%20theme.png?raw=true');"></div>
+
+  <div class="personnage-layout">
+    <div class="personnage-resume-wrap">
+      <div class="personnage-resume">
+        <h1 id="perso-nom"></h1>
+        <p id="perso-resume"></p>
+      </div>
+    </div>
+
+    <div class="personnage-media">
+      <video id="perso-video" autoplay loop muted playsinline>
+        <source src="" type="video/mp4">
+      </video>
+      <div class="personnage-roles" id="perso-roles"></div>
+      <div class="personnage-gameplay-info" id="perso-gameplay-info">
+        <!-- Informations de gameplay à venir -->
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="donnees-personnages.js"></script>
+<script src="personnage-page.js"></script>
+<script>
+  initPersonnagePage({
+    baseId: "Xel",
+    resume: "Guerrier surnaturel, le Xélor défie les lois du temps et de l'espace pour imposer ses propres règles. Sa mécanique principale lui permet d'invoquer un cadran à 12 cases formant un cercle dans lequel il se déplace instantanément. Son but est alors de trouver la meilleure position pour atteindre ses cibles.",
+    videoUrl: "https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/aa4b0db3a4e538ff720995d5038098e3a1371dd7/vid%C3%A9os/gameplay/extrait%20x%C3%A9lor.mp4?raw=true",
+    rolesGameplay: [
+      { icon: "https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/synergies/dps.png?raw=true", label: "Dégâts" },
+      { icon: "https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/synergies/mobilit%C3%A9.png?raw=true", label: "Mobilité" },
+      { icon: "https://github.com/Quentin-Rzl/Compotesteur_Wakfu.github.io/blob/main/Images/synergies/placement.png?raw=true", label: "Placement" }
+    ],
+    difficulte: 3
+  });
+</script>
+</body>
+</html>
